@@ -67,4 +67,63 @@ stash@{1}: WIP on dev: c983edc Merge branch 'main' of https://github.com/Nezerwa
 stash@{2}: WIP on dev: c983edc Merge branch 'main' of https://github.com/Nezerwa/Gym-Git-Exercise-Solutions into dev
 (END)
 
+Eligrand@Eligrand-Pc MINGW64 ~/Gym Git Exercise Solutions (dev)
+$ git stash list
+stash@{0}: WIP on dev: c983edc Merge branch 'main' of https://github.com/Nezerwa/Gym-Git-Exercise-Solutions into dev
+stash@{1}: WIP on dev: c983edc Merge branch 'main' of https://github.com/Nezerwa/Gym-Git-Exercise-Solutions into dev
+stash@{2}: WIP on dev: c983edc Merge branch 'main' of https://github.com/Nezerwa/Gym-Git-Exercise-Sol
+
+Eligrand@Eligrand-Pc MINGW64 ~/Gym Git Exercise Solutions (dev)
+$ git stash pop stash@{1}
+On branch dev
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   about.html
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   README.md
+
+Dropped stash@{1} (f44cb017da9f1b4c4f28c13d09b91e1bfdbc708c)
+
+Eligrand@Eligrand-Pc MINGW64 ~/Gym Git Exercise Solutions (dev)
+$ git  add .
+
+Eligrand@Eligrand-Pc MINGW64 ~/Gym Git Exercise Solutions (dev)
+$ git commit -m 'Add new changes'
+[dev ca44eef] Add new changes
+ 2 files changed, 38 insertions(+), 1 deletion(-)
+ create mode 100644 about.html
+
+Eligrand@Eligrand-Pc MINGW64 ~/Gym Git Exercise Solutions (dev)
+$ git stash list
+stash@{0}: WIP on dev: c983edc Merge branch 'main' of https://github.com/Nezerwa/Gym-Git-Exercise-Solutions into dev
+stash@{1}: WIP on dev: c983edc Merge branch 'main' of https://github.com/Nezerwa/Gym-Git-Exercise-Solutions into dev
+Eligrand@Eligrand-Pc MINGW64 ~/Gym Git Exercise Solutions (dev)
+$ git stash list
+stash@{0}: WIP on dev: ca44eef Add new changes
+stash@{1}: WIP on dev: c983edc Merge branch 'main' of https://github.com/Nezerwa/Gym-Git-Exercise-Solutions into dev
+
+Eligrand@Eligrand-Pc MINGW64 ~/Gym Git Exercise Solutions (dev)
+$ git stash pop stash@{1}
+On branch dev
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   team.html
+
+Dropped stash@{1} (099cc78142aad70d9afafc4cc88d3b19b7eae8aa)
+
+Eligrand@Eligrand-Pc MINGW64 ~/Gym Git Exercise Solutions (dev)
+$ git reset --hard
+HEAD is now at ca44eef Add new changes
+
+Eligrand@Eligrand-Pc MINGW64 ~/Gym Git Exercise Solutions (dev)
+$ git status
+On branch dev
+nothing to commit, working tree clean
+Eligrand@Eligrand-Pc MINGW64 ~/Gym Git Exercise Solutions (dev)
+$
 ```
+
+
