@@ -2,7 +2,7 @@
 
 ## bundle 1
 
-### exercise
+### exercise1
 
 ```bash
 PS C:\Users\Eligrand\Gym Git Exercise Solutions> git init
@@ -40,5 +40,31 @@ Switched to branch 'dev'
 PS C:\Users\Eligrand\Gym Git Exercise Solutions> git branch -d test
 Deleted branch test (was 63526d9).
 PS C:\Users\Eligrand\Gym Git Exercise Solutions>
+
+```
+
+### exercise 2
+
+```bash
+
+nothing added to commit but untracked files present (use "git add" to track)
+PS C:\Users\Eligrand\Gym Git Exercise Solutions> git add .\home.html
+PS C:\Users\Eligrand\Gym Git Exercise Solutions> git stash
+Saved working directory and index state WIP on dev: c983edc Merge branch 'main' of https://github.com/Nezerwa/Gym-Git-Exercise-Solutions into dev
+PS C:\Users\Eligrand\Gym Git Exercise Solutions> git stash list
+stash@{0}: WIP on dev: c983edc Merge branch 'main' of https://github.com/Nezerwa/Gym-Git-Exercise-Solutions into dev
+PS C:\Users\Eligrand\Gym Git Exercise Solutions> git add .\about.html
+PS C:\Users\Eligrand\Gym Git Exercise Solutions> git stash
+Saved working directory and index state WIP on dev: c983edc Merge branch 'main' of https://github.com/Nezerwa/Gym-Git-Exercise-Solutions into dev
+PS C:\Users\Eligrand\Gym Git Exercise Solutions> git add .\team.html
+PS C:\Users\Eligrand\Gym Git Exercise Solutions> git stash
+Saved working directory and index state WIP on dev: c983edc Merge branch 'main' of https://github.com/Nezerwa/Gym-Git-Exercise-Solutions into dev
+PS C:\Users\Eligrand\Gym Git Exercise Solutions> git stash list
+stash@{0}: WIP on dev: c983edc Merge branch 'main' of https://github.com/Nezerwa/Gym-Git-Exercise-Solutions into dev
+stash@{1}: WIP on dev: c983edc Merge branch 'main' of https://github.com/Nezerwa/Gym-Git-Exercise-Solutions into dev
+ev
+stash@{1}: WIP on dev: c983edc Merge branch 'main' of https://github.com/Nezerwa/Gym-Git-Exercise-Solutions into dev
+stash@{2}: WIP on dev: c983edc Merge branch 'main' of https://github.com/Nezerwa/Gym-Git-Exercise-Solutions into dev
+(END)
 
 ```
