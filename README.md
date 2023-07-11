@@ -2,8 +2,9 @@
 
 ## bundle 1
 
-### exercise 
-```bash 
+### exercise
+
+```bash
 PS C:\Users\Eligrand\Gym Git Exercise Solutions> git init
 Initialized empty Git repository in C:/Users/Eligrand/Gym Git Exercise Solutions/.git/
 PS C:\Users\Eligrand\Gym Git Exercise Solutions> git add .\README.md
