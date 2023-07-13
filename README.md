@@ -126,4 +126,42 @@ Eligrand@Eligrand-Pc MINGW64 ~/Gym Git Exercise Solutions (dev)
 $
 ```
 
+## Bundle2
 
+## Exercise 1
+
+
+```bash 
+
+Eligrand@Eligrand-Pc MINGW64 ~/Gym Git Exercise Solutions (dev)
+$ git checkout -b ft/bundle-2 
+Switched to a new branch 'ft/bundle-2'
+
+Eligrand@Eligrand-Pc MINGW64 ~/Gym Git Exercise Solutions (ft/bundle-2)
+$ git add services.html 
+
+Eligrand@Eligrand-Pc MINGW64 ~/Gym Git Exercise Solutions (ft/bundle-2)
+$ git commit -m 'Add services page'
+[ft/bundle-2 927e888] Add services page
+ 1 file changed, 11 insertions(+)
+ create mode 100644 services.html
+
+Eligrand@Eligrand-Pc MINGW64 ~/Gym Git Exercise Solutions (ft/bundle-2)
+$ git push origin ft/bundle-2
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 448 bytes | 89.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+remote: 
+remote: Create a pull request for 'ft/bundle-2' on GitHub by visiting:
+remote:      https://github.com/Nezerwa/Gym-Git-Exercise-Solutions/pull/new/ft/bundle-2
+remote:
+To https://github.com/Nezerwa/Gym-Git-Exercise-Solutions.git
+ * [new branch]      ft/bundle-2 -> ft/bundle-2
+
+Eligrand@Eligrand-Pc MINGW64 ~/Gym Git Exercise Solutions (ft/bundle-2)
+$
+```
