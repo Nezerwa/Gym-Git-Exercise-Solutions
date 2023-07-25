@@ -182,9 +182,6 @@ From https://github.com/Nezerwa/Gym-Git-Exercise-Solutions
  * branch            main       -> FETCH_HEAD
 Already up to date.
 
-User@DESKTOP-441QGV2 MINGW64 ~/Gym-Git-Exercise-Solutions (main)
-$ git pull
-Already up to date.
 
 User@DESKTOP-441QGV2 MINGW64 ~/Gym-Git-Exercise-Solutions (main)
 $ git checkout -b  ft/service-redesign
@@ -242,5 +239,49 @@ To https://github.com/Nezerwa/Gym-Git-Exercise-Solutions.git
 User@DESKTOP-441QGV2 MINGW64 ~/Gym-Git-Exercise-Solutions (main)
 $ git checkout ft/service-redesign
 Switched to branch 'ft/service-redesign'
+
+User@DESKTOP-441QGV2 MINGW64 ~/Gym-Git-Exercise-Solutions (ft/service-redesign)
+$ git diff ft/service-redesign..main
+diff --git a/services.html b/services.html
+index 84759fe..e250312 100644
+--- a/services.html
++++ b/services.html
+@@ -7,6 +7,6 @@
+   </head>
+   <body>
+     <h1>justing for testing purpose</h1>
+
+User@DESKTOP-441QGV2 MINGW64 ~/Gym-Git-Exercise-Solutions (ft/service-redesign)
+$ git merge main
+Auto-merging services.html
+CONFLICT (content): Merge conflict in services.html
+Automatic merge failed; fix conflicts and then commit the result.
+
+User@DESKTOP-441QGV2 MINGW64 ~/Gym-Git-Exercise-Solutions (ft/service-redesign|MERGING)
+$ git merge main
+error: Merging is not possible because you have unmerged files.
+hint: Fix them up in the work tree, and then use 'git add/rm <file>'
+hint: as appropriate to mark resolution and make a commit.
+fatal: Exiting because of an unresolved conflict.
+
+User@DESKTOP-441QGV2 MINGW64 ~/Gym-Git-Exercise-Solutions (ft/service-redesign)
+$ git commit -m 'Fix merge conflict'
+[ft/service-redesign 4557a60] Fix merge conflict
+ 2 files changed, 93 insertions(+), 13 deletions(-)
+
+User@DESKTOP-441QGV2 MINGW64 ~/Gym-Git-Exercise-Solutions (ft/service-redesign)
+$ git push origin ft/service-redesign
+Enumerating objects: 13, done.
+Counting objects: 100% (12/12), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (7/7), done.
+Writing objects: 100% (7/7), 1.49 KiB | 1.49 MiB/s, done.
+Total 7 (delta 3), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (3/3), completed with 3 local objects.
+To https://github.com/Nezerwa/Gym-Git-Exercise-Solutions.git
+   620931a..4557a60  ft/service-redesign -> ft/service-redesign
+
+User@DESKTOP-441QGV2 MINGW64 ~/Gym-Git-Exercise-Solutions (ft/service-redesign)
+$
 
 ```
