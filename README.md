@@ -165,3 +165,229 @@ To https://github.com/Nezerwa/Gym-Git-Exercise-Solutions.git
 Eligrand@Eligrand-Pc MINGW64 ~/Gym Git Exercise Solutions (ft/bundle-2)
 $
 ```
+
+## exercise 2
+
+```bash
+
+User@DESKTOP-441QGV2 MINGW64 ~/Gym-Git-Exercise-Solutions (ft/service-redesign)
+$ git checkout -b 'ft/team-page'
+Switched to a new branch 'ft/team-page'
+
+User@DESKTOP-441QGV2 MINGW64 ~/Gym-Git-Exercise-Solutions (ft/team-page)
+$ git add team.html 
+
+User@DESKTOP-441QGV2 MINGW64 ~/Gym-Git-Exercise-Solutions (ft/team-page)
+$ git commit -m 'Add new changes'
+[ft/team-page 2c45e90] Add new changes
+ 1 file changed, 25 insertions(+)
+ create mode 100644 team.html
+
+User@DESKTOP-441QGV2 MINGW64 ~/Gym-Git-Exercise-Solutions (ft/team-page)
+$ git push origin ft/team-page
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 461 bytes | 461.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+remote: 
+remote: Create a pull request for 'ft/team-page' on GitHub by visiting:
+remote:      https://github.com/Nezerwa/Gym-Git-Exercise-Solutions/pull/new/ft/team-page
+remote:
+To https://github.com/Nezerwa/Gym-Git-Exercise-Solutions.git
+ * [new branch]      ft/team-page -> ft/team-page
+
+User@DESKTOP-441QGV2 MINGW64 ~/Gym-Git-Exercise-Solutions (ft/team-page)
+$ git checkout main 
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+User@DESKTOP-441QGV2 MINGW64 ~/Gym-Git-Exercise-Solutions (main)
+$ git checkout -b 'ft/contact-page'
+Switched to a new branch 'ft/contact-page'
+
+User@DESKTOP-441QGV2 MINGW64 ~/Gym-Git-Exercise-Solutions (ft/contact-page)
+$ git checkout ft/team-page 
+Switched to branch 'ft/team-page'
+
+User@DESKTOP-441QGV2 MINGW64 ~/Gym-Git-Exercise-Solutions (ft/team-page)
+$ git log 
+commit 2c45e90d47c66c15f2ceeee43cb75967304fa583 (HEAD -> ft/team-page, origin/ft/team-page)
+Author: Nezerwa <eligrand2000@gmail.com>
+Date:   Wed Jul 26 10:51:13 2023 +0200
+
+    Add new changes
+
+commit 0d52b0fdec56ef318226ef17da313c2303d470c1 (origin/ft/service-redesign, ft/service-redesign)
+Author: Nezerwa <eligrand2000@gmail.com>
+
+User@DESKTOP-441QGV2 MINGW64 ~/Gym-Git-Exercise-Solutions (ft/team-page)
+$ git checkout ft/contact-page
+Switched to branch 'ft/contact-page'
+
+
+User@DESKTOP-441QGV2 MINGW64 ~/Gym-Git-Exercise-Solutions (ft/contact-page)
+$ git cherry-pick 2c45e90d47c66c15f2ceeee43cb75967304fa583
+[ft/contact-page 92f2cc8] Add new changes
+ Date: Wed Jul 26 10:51:13 2023 +0200
+ 1 file changed, 25 insertions(+)
+ create mode 100644 team.html
+
+
+User@DESKTOP-441QGV2 MINGW64 ~/Gym-Git-Exercise-Solutions (ft/contact-page)
+$ git add .
+
+User@DESKTOP-441QGV2 MINGW64 ~/Gym-Git-Exercise-Solutions (ft/contact-page)
+$ git commit -m 'add changes from team branch'
+[ft/contact-page 307360c] add changes from team branch
+ 1 file changed, 3 insertions(+)
+
+User@DESKTOP-441QGV2 MINGW64 ~/Gym-Git-Exercise-Solutions (ft/contact-page)
+$ git push origin ft/contact-page
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (6/6), done.
+Writing objects: 100% (6/6), 693 bytes | 693.00 KiB/s, done.
+Total 6 (delta 3), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (3/3), completed with 1 local object.
+remote:
+remote: Create a pull request for 'ft/contact-page' on GitHub by visiting:
+remote:      https://github.com/Nezerwa/Gym-Git-Exercise-Solutions/pull/new/ft/contact-page
+remote:
+To https://github.com/Nezerwa/Gym-Git-Exercise-Solutions.git
+ * [new branch]      ft/contact-page -> ft/contact-page
+
+User@DESKTOP-441QGV2 MINGW64 ~/Gym-Git-Exercise-Solutions (ft/contact-page)
+$ git checkout -b ft/faq-page
+Switched to a new branch 'ft/faq-page'
+
+User@DESKTOP-441QGV2 MINGW64 ~/Gym-Git-Exercise-Solutions (ft/faq-page)
+$ git add faq.html 
+
+User@DESKTOP-441QGV2 MINGW64 ~/Gym-Git-Exercise-Solutions (ft/faq-page)
+$ git commit -m 'add new changes'
+[ft/faq-page f7a07a3] add new changes
+ 1 file changed, 14 insertions(+)
+ create mode 100644 faq.html
+
+User@DESKTOP-441QGV2 MINGW64 ~/Gym-Git-Exercise-Solutions (ft/faq-page)
+$ git checkout ft/team-page 
+Switched to branch 'ft/team-page'
+
+User@DESKTOP-441QGV2 MINGW64 ~/Gym-Git-Exercise-Solutions (ft/team-page)
+$ git log
+commit 2c45e90d47c66c15f2ceeee43cb75967304fa583 (HEAD -> ft/team-page, origin/ft/team-page)
+Author: Nezerwa <eligrand2000@gmail.com>
+Date:   Wed Jul 26 10:51:13 2023 +0200
+
+    Add new changes
+
+commit 0d52b0fdec56ef318226ef17da313c2303d470c1 (origin/ft/service-redesign, ft/service-redesign)
+Author: Nezerwa <eligrand2000@gmail.com>
+
+User@DESKTOP-441QGV2 MINGW64 ~/Gym-Git-Exercise-Solutions (ft/team-page)
+$ git checkout ft/faq-page
+Switched to branch 'ft/faq-page'
+
+User@DESKTOP-441QGV2 MINGW64 ~/Gym-Git-Exercise-Solutions (ft/faq-page|REVERTING)
+$ git add .
+
+User@DESKTOP-441QGV2 MINGW64 ~/Gym-Git-Exercise-Solutions (ft/faq-page|REVERTING)
+$ git commit -m "commit changes"
+On branch ft/faq-page
+You are currently reverting commit 2c45e90.
+  (all conflicts fixed: run "git revert --continue")
+  (use "git revert --skip" to skip this patch)
+  (use "git revert --abort" to cancel the revert operation)
+
+
+User@DESKTOP-441QGV2 MINGW64 ~/Gym-Git-Exercise-Solutions (ft/team-page)
+$ git add .
+
+User@DESKTOP-441QGV2 MINGW64 ~/Gym-Git-Exercise-Solutions (ft/team-page)
+$ git commit -m 'add changes'
+[ft/team-page 212a524] add changes
+ 1 file changed, 25 deletions(-)
+ delete mode 100644 team.html
+
+User@DESKTOP-441QGV2 MINGW64 ~/Gym-Git-Exercise-Solutions (ft/team-page)
+$ git checkout ft/faq-page
+Switched to branch 'ft/faq-page'
+Your branch is up to date with 'origin/ft/faq-page'.
+
+User@DESKTOP-441QGV2 MINGW64 ~/Gym-Git-Exercise-Solutions (ft/faq-page)
+$ git revert 2c45e90d47c66c15f2ceeee43cb75967304fa583
+CONFLICT (modify/delete): team.html deleted in parent of 2c45e90 (Add new changes) and modified in HEAD.  Version HEAD of team.html left in tree.
+error: could not revert 2c45e90... Add new changes
+hint: After resolving the conflicts, mark them with
+hint: "git add/rm <pathspec>", then run
+hint: "git revert --continue".
+hint: You can instead skip this commit with "git revert --skip".
+hint: To abort and get back to the state before "git revert",
+hint: run "git revert --abort".
+
+User@DESKTOP-441QGV2 MINGW64 ~/Gym-Git-Exercise-Solutions (ft/faq-page|REVERTING)
+$ git revert --continue
+On branch ft/faq-page
+Your branch is up to date with 'origin/ft/faq-page'.
+
+You are currently reverting commit 2c45e90.
+  (all conflicts fixed: run "git revert --continue")
+  (use "git revert --skip" to skip this patch)
+  (use "git revert --abort" to cancel the revert operation)
+
+nothing to commit, working tree clean
+
+User@DESKTOP-441QGV2 MINGW64 ~/Gym-Git-Exercise-Solutions (ft/faq-page|REVERTING)
+$ git add .
+
+User@DESKTOP-441QGV2 MINGW64 ~/Gym-Git-Exercise-Solutions (ft/faq-page|REVERTING)
+$ git commit -m 'add changes'
+On branch ft/faq-page
+Your branch is up to date with 'origin/ft/faq-page'.
+
+You are currently reverting commit 2c45e90.
+  (all conflicts fixed: run "git revert --continue")
+  (use "git revert --skip" to skip this patch)
+  (use "git revert --abort" to cancel the revert operation)
+
+nothing to commit, working tree clean
+
+User@DESKTOP-441QGV2 MINGW64 ~/Gym-Git-Exercise-Solutions (ft/faq-page|REVERTING)
+$ git revert 2c45e90d47c66c15f2ceeee43cb75967304fa583
+CONFLICT (modify/delete): team.html deleted in parent of 2c45e90 (Add new changes) and modified in HEAD.  Version HEAD of team.html left in tree.
+error: could not revert 2c45e90... Add new changes
+hint: After resolving the conflicts, mark them with
+hint: "git add/rm <pathspec>", then run
+hint: "git revert --continue".
+hint: You can instead skip this commit with "git revert --skip".
+hint: To abort and get back to the state before "git revert",
+hint: run "git revert --abort".
+
+User@DESKTOP-441QGV2 MINGW64 ~/Gym-Git-Exercise-Solutions (ft/faq-page|REVERTING)
+$ git add .
+
+User@DESKTOP-441QGV2 MINGW64 ~/Gym-Git-Exercise-Solutions (ft/faq-page|REVERTING)
+$ git commit -m 'revert'
+[ft/faq-page d4dc952] revert
+ 1 file changed, 3 deletions(-)
+
+User@DESKTOP-441QGV2 MINGW64 ~/Gym-Git-Exercise-Solutions (ft/faq-page)
+$ git push origin ft/faq-page
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 279 bytes | 279.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/Nezerwa/Gym-Git-Exercise-Solutions.git
+   f7a07a3..d4dc952  ft/faq-page -> ft/faq-page
+
+User@DESKTOP-441QGV2 MINGW64 ~/Gym-Git-Exercise-Solutions (ft/faq-page)
+$
+
+```
