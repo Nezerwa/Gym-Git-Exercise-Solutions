@@ -130,15 +130,14 @@ $
 
 ## Exercise 1
 
-
-```bash 
+```bash
 
 Eligrand@Eligrand-Pc MINGW64 ~/Gym Git Exercise Solutions (dev)
-$ git checkout -b ft/bundle-2 
+$ git checkout -b ft/bundle-2
 Switched to a new branch 'ft/bundle-2'
 
 Eligrand@Eligrand-Pc MINGW64 ~/Gym Git Exercise Solutions (ft/bundle-2)
-$ git add services.html 
+$ git add services.html
 
 Eligrand@Eligrand-Pc MINGW64 ~/Gym Git Exercise Solutions (ft/bundle-2)
 $ git commit -m 'Add services page'
@@ -155,7 +154,7 @@ Compressing objects: 100% (3/3), done.
 Writing objects: 100% (3/3), 448 bytes | 89.00 KiB/s, done.
 Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
 remote: Resolving deltas: 100% (1/1), completed with 1 local object.
-remote: 
+remote:
 remote: Create a pull request for 'ft/bundle-2' on GitHub by visiting:
 remote:      https://github.com/Nezerwa/Gym-Git-Exercise-Solutions/pull/new/ft/bundle-2
 remote:
@@ -166,7 +165,9 @@ Eligrand@Eligrand-Pc MINGW64 ~/Gym Git Exercise Solutions (ft/bundle-2)
 $
 ```
 
-## exercise 2
+## Bundle 3
+
+## Exercise 2
 
 ```bash
 
@@ -175,7 +176,7 @@ $ git checkout -b 'ft/team-page'
 Switched to a new branch 'ft/team-page'
 
 User@DESKTOP-441QGV2 MINGW64 ~/Gym-Git-Exercise-Solutions (ft/team-page)
-$ git add team.html 
+$ git add team.html
 
 User@DESKTOP-441QGV2 MINGW64 ~/Gym-Git-Exercise-Solutions (ft/team-page)
 $ git commit -m 'Add new changes'
@@ -192,7 +193,7 @@ Compressing objects: 100% (3/3), done.
 Writing objects: 100% (3/3), 461 bytes | 461.00 KiB/s, done.
 Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
 remote: Resolving deltas: 100% (1/1), completed with 1 local object.
-remote: 
+remote:
 remote: Create a pull request for 'ft/team-page' on GitHub by visiting:
 remote:      https://github.com/Nezerwa/Gym-Git-Exercise-Solutions/pull/new/ft/team-page
 remote:
@@ -200,7 +201,7 @@ To https://github.com/Nezerwa/Gym-Git-Exercise-Solutions.git
  * [new branch]      ft/team-page -> ft/team-page
 
 User@DESKTOP-441QGV2 MINGW64 ~/Gym-Git-Exercise-Solutions (ft/team-page)
-$ git checkout main 
+$ git checkout main
 Switched to branch 'main'
 Your branch is up to date with 'origin/main'.
 
@@ -209,11 +210,11 @@ $ git checkout -b 'ft/contact-page'
 Switched to a new branch 'ft/contact-page'
 
 User@DESKTOP-441QGV2 MINGW64 ~/Gym-Git-Exercise-Solutions (ft/contact-page)
-$ git checkout ft/team-page 
+$ git checkout ft/team-page
 Switched to branch 'ft/team-page'
 
 User@DESKTOP-441QGV2 MINGW64 ~/Gym-Git-Exercise-Solutions (ft/team-page)
-$ git log 
+$ git log
 commit 2c45e90d47c66c15f2ceeee43cb75967304fa583 (HEAD -> ft/team-page, origin/ft/team-page)
 Author: Nezerwa <eligrand2000@gmail.com>
 Date:   Wed Jul 26 10:51:13 2023 +0200
@@ -265,7 +266,7 @@ $ git checkout -b ft/faq-page
 Switched to a new branch 'ft/faq-page'
 
 User@DESKTOP-441QGV2 MINGW64 ~/Gym-Git-Exercise-Solutions (ft/faq-page)
-$ git add faq.html 
+$ git add faq.html
 
 User@DESKTOP-441QGV2 MINGW64 ~/Gym-Git-Exercise-Solutions (ft/faq-page)
 $ git commit -m 'add new changes'
@@ -274,7 +275,7 @@ $ git commit -m 'add new changes'
  create mode 100644 faq.html
 
 User@DESKTOP-441QGV2 MINGW64 ~/Gym-Git-Exercise-Solutions (ft/faq-page)
-$ git checkout ft/team-page 
+$ git checkout ft/team-page
 Switched to branch 'ft/team-page'
 
 User@DESKTOP-441QGV2 MINGW64 ~/Gym-Git-Exercise-Solutions (ft/team-page)
@@ -390,4 +391,60 @@ To https://github.com/Nezerwa/Gym-Git-Exercise-Solutions.git
 User@DESKTOP-441QGV2 MINGW64 ~/Gym-Git-Exercise-Solutions (ft/faq-page)
 $
 
+```
+
+```bash
+
+User@DESKTOP-441QGV2 MINGW64 ~/Gym-Git-Exercise-Solutions (ft/faq-page)
+$ git checkout -b ft/home-page-redesign
+Switched to a new branch 'ft/home-page-redesign'
+
+User@DESKTOP-441QGV2 MINGW64 ~/Gym-Git-Exercise-Solutions (ft/home-page-redesign)
+$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+User@DESKTOP-441QGV2 MINGW64 ~/Gym-Git-Exercise-Solutions (main)
+$ git add index.html
+
+User@DESKTOP-441QGV2 MINGW64 ~/Gym-Git-Exercise-Solutions (main)
+$ git commit -m 'Add some changes to test'
+[main 7f0c2ed] Add some changes to test
+ 1 file changed, 12 insertions(+), 7 deletions(-)
+
+User@DESKTOP-441QGV2 MINGW64 ~/Gym-Git-Exercise-Solutions (main)
+$ git checkout ft/home-page-redesign
+Switched to branch 'ft/home-page-redesign'
+
+User@DESKTOP-441QGV2 MINGW64 ~/Gym-Git-Exercise-Solutions (ft/home-page-redesign)
+$ git rebase main
+Successfully rebased and updated refs/heads/ft/home-page-redesign.
+
+
+User@DESKTOP-441QGV2 MINGW64 ~/Gym-Git-Exercise-Solutions (ft/home-page-redesign)
+$ git add .
+
+User@DESKTOP-441QGV2 MINGW64 ~/Gym-Git-Exercise-Solutions (ft/home-page-redesign)
+$ git commit -m 'add new changes'
+[ft/home-page-redesign 714a5b7] add new changes
+ 1 file changed, 1 insertion(+)
+
+User@DESKTOP-441QGV2 MINGW64 ~/Gym-Git-Exercise-Solutions (ft/home-page-redesign)
+$ git push origin ft/home-page-redesign
+Enumerating objects: 23, done.
+Counting objects: 100% (23/23), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (20/20), done.
+Writing objects: 100% (20/20), 4.45 KiB | 1.48 MiB/s, done.
+Total 20 (delta 9), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (9/9), done.
+remote:
+remote: Create a pull request for 'ft/home-page-redesign' on GitHub by visiting:
+remote:      https://github.com/Nezerwa/Gym-Git-Exercise-Solutions/pull/new/ft/home-page-redesign
+remote:
+To https://github.com/Nezerwa/Gym-Git-Exercise-Solutions.git
+ * [new branch]      ft/home-page-redesign -> ft/home-page-redesign
+
+User@DESKTOP-441QGV2 MINGW64 ~/Gym-Git-Exercise-Solutions (ft/home-page-redesign)
+$
 ```
