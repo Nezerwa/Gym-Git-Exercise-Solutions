@@ -448,3 +448,77 @@ To https://github.com/Nezerwa/Gym-Git-Exercise-Solutions.git
 User@DESKTOP-441QGV2 MINGW64 ~/Gym-Git-Exercise-Solutions (ft/home-page-redesign)
 $
 ```
+
+## Bundle 4
+
+## exercise 1
+
+```bash
+
+User@DESKTOP-441QGV2 MINGW64 ~/Gym-Git-Exercise-Solutions (ft/home-page-redesign)
+$ git checkout main
+Switched to branch 'main'
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+
+User@DESKTOP-441QGV2 MINGW64 ~/Gym-Git-Exercise-Solutions (main)
+$ git remote add git-copy https://github.com/Nezerwa/git-copy.git
+
+User@DESKTOP-441QGV2 MINGW64 ~/Gym-Git-Exercise-Solutions (main)
+$ git checkout ft/home-page-redesign
+Switched to branch 'ft/home-page-redesign'
+
+User@DESKTOP-441QGV2 MINGW64 ~/Gym-Git-Exercise-Solutions (ft/home-page-redesign)
+$ git add .
+
+User@DESKTOP-441QGV2 MINGW64 ~/Gym-Git-Exercise-Solutions (ft/home-page-redesign)
+$ git commit -m 'add changes'
+[ft/home-page-redesign 45dfa63] add changes
+ 1 file changed, 1 insertion(+)
+
+User@DESKTOP-441QGV2 MINGW64 ~/Gym-Git-Exercise-Solutions (ft/home-page-redesign)
+$ git push --all
+Enumerating objects: 9, done.
+Counting objects: 100% (9/9), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (5/5), 483 bytes | 483.00 KiB/s, done.
+Total 5 (delta 3), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (3/3), completed with 3 local objects.
+To https://github.com/Nezerwa/Gym-Git-Exercise-Solutions.git
+   9c1bee0..45dfa63  ft/home-page-redesign -> ft/home-page-redesign
+   2c45e90..212a524  ft/team-page -> ft/team-page
+   6102520..7f0c2ed  main -> main
+ ! [rejected]        ft/faq-page -> ft/faq-page (non-fast-forward)
+error: failed to push some refs to 'https://github.com/Nezerwa/Gym-Git-Exercise-Solutions.git'
+hint: Updates were rejected because a pushed branch tip is behind its remote
+hint: counterpart. Check out this branch and integrate the remote changes
+hint: (e.g. 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+
+User@DESKTOP-441QGV2 MINGW64 ~/Gym-Git-Exercise-Solutions (ft/home-page-redesign)
+$ git push git-copy main
+Enumerating objects: 37, done.
+Counting objects: 100% (37/37), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (27/27), done.
+Writing objects: 100% (37/37), 6.19 KiB | 6.19 MiB/s, done.
+Total 37 (delta 12), reused 30 (delta 8), pack-reused 0
+remote: Resolving deltas: 100% (12/12), done.
+To https://github.com/Nezerwa/git-copy.git
+ * [new branch]      main -> main
+
+User@DESKTOP-441QGV2 MINGW64 ~/Gym-Git-Exercise-Solutions (ft/home-page-redesign)
+$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+User@DESKTOP-441QGV2 MINGW64 ~/Gym-Git-Exercise-Solutions (main)
+$ git checkout ft/home-page-redesign
+Switched to branch 'ft/home-page-redesign'
+
+User@DESKTOP-441QGV2 MINGW64 ~/Gym-Git-Exercise-Solutions (ft/home-page-redesign)
+$
+```
